@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Attachment.Controller">
+    <children>
+      <SplitPane dividerPositions="0.3760539629005059" layoutX="662.0" layoutY="87.0" prefHeight="556.0" prefWidth="595.0">
+         <items>
+              <ScrollPane fx:id="D_FileScrollPane" prefHeight="510.0" prefWidth="350.0" />
+              <ScrollPane fx:id="D_FileSearchScrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS" prefHeight="510.0" prefWidth="350.0" />
+         </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.3794266441821248" layoutX="24.0" layoutY="87.0" prefHeight="556.0" prefWidth="595.0">
+         <items>
+              <ScrollPane fx:id="C_FileScrollPane" prefHeight="510.0" prefWidth="350.0" />
+              <ScrollPane fx:id="C_FileSearchScrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="ALWAYS" prefHeight="510.0" prefWidth="350.0" />
+         </items>
+      </SplitPane>
+        <Label layoutX="24.0" layoutY="49.0" text="C:/" textFill="#727272" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="49.0">
+            <font>
+                <Font name="Segoe UI Semibold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="662.0" layoutY="49.0" text="D:/" textFill="#727272" AnchorPane.rightAnchor="586.0" AnchorPane.topAnchor="49.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="C_SearchTextField" layoutX="258.0" layoutY="663.0" prefHeight="26.0" prefWidth="231.0" AnchorPane.leftAnchor="258.0" AnchorPane.topAnchor="663.0" />
+        <TextField fx:id="D_SearchTextField" layoutX="896.0" layoutY="663.0" prefHeight="26.0" prefWidth="231.0" AnchorPane.rightAnchor="153.0" AnchorPane.topAnchor="663.0" />
+        <MenuButton fx:id="D_FolderMenu" layoutX="662.0" layoutY="661.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="215.0" text="Folder" AnchorPane.rightAnchor="403.0" AnchorPane.topAnchor="661.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </MenuButton>
+        <MenuButton fx:id="C_FolderMenu" layoutX="24.0" layoutY="661.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="215.0" text="Folder" textAlignment="CENTER" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="661.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </MenuButton>
+      <Button fx:id="C_SearchButton" layoutX="508.0" layoutY="664.0" mnemonicParsing="false" prefWidth="111.0" text="Search" />
+      <Button fx:id="D_SearchButton" layoutX="1146.0" layoutY="663.0" mnemonicParsing="false" prefWidth="111.0" text="Search" />
+    </children>
+</AnchorPane>
